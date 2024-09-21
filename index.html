@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework-19</title>
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Task 0 -->
+      <div id="counter">
+        <button type="button" data-action="decrement" id="decrement">-1</button>
+        <span id="value">0</span>
+        <button type="button" data-action="increment" id="increment">+1</button>
+      </div>
+
+      <!-- Task 1 -->
+      <button class="modal-button">Відкрити модалку</button>
+        <div class="backdrop js-backdrop">
+            <div class="modal">
+                <h2>Modal window</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque delectus est incidunt voluptates eaque debitis dicta voluptatum necessitatibus voluptate velit blanditiis, sunt eum veniam, eveniet obcaecati voluptatem enim odio minus dignissimos nam. Esse odio voluptates a at, nostrum necessitatibus corrupti, hic similique minus, impedit excepturi ea accusantium ab exercitationem adipisci.
+                </p>
+                <button class="button" type="button" data-close>Закрити</button>
+            </div>
+        </div>
+
+        <!-- Task 3 -->
+        <form>
+            <p>Choose a color:</p>
+            <label>
+                <input class="white grey black" type="radio" name="color" value="white" checked>
+                White
+            </label>
+            <label>
+                <input class="white grey black" type="radio" name="color" value="grey">
+                Grey
+            </label>
+            <label>
+                <input class="white grey black" type="radio" name="color" value="black">
+                Black
+            </label>
+        </form>
+
+        <!-- Task 4 -->
+        <input type="text" placeholder="Ваше ім'я?" id="name-input"/>
+        <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+
+        <input
+          type="text"
+          id="validation-input"
+          data-length="6"
+          placeholder="Введи 6 символів"/>
+
+        <!-- Task 5 -->
+        <input id="font-size-control" type="range" />
+        <br />
+        <span id="text">Абракадабра!</span>
+    </main>
+  </body>
+</html>
